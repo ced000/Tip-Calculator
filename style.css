@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Tajawal:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to left, green, yellow  );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: white;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    width: 40vw;
+    max-width: 350px;
+    height: 350px;
+    transition: all 1s ease-in-out;
+}
+
+.tip-result {
+    height: 0;
+    padding: 0;
+    margin-top: 5px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    text-align: center;
+}
+
+.tip-result span {
+    font-family: 'Acme', sans-serif;
+}
+
+.form-container h1 {
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    margin: -20px -20px 0;
+    padding: 5px 0;
+    background-color: salmon;
+}
+
+input {
+    background-color: #eee;
+    border-radius: 4px;
+    border: 1px solid hotpink;
+    padding: 5px;
+    width: 80%;
+    font-family: 'Tajawal', sans-serif;
+}
+
+input:focus, select:focus {
+    outline: none;
+}
+
+p {
+    margin: 0;
+}
+
+div {
+    margin: 20px 5px;
+}
+
+select {
+    padding: 7px;
+    border: 1px solid hotpink;
+    border-radius: 4px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.button-div {
+    text-align: center;
+}
+button {
+    margin: auto;
+    padding: 8px;
+    background-color: salmon;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Acme', sans-serif;
+    cursor: pointer;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+button:hover {
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}

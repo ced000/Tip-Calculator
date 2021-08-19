@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="#">
+            <h1> Tip Calculator</h1>
+            <div>
+                <p>How much was your bill?</p>
+                <span>$</span>
+                <input type="text" placeholder="Bill Amount" name="" id="bill">
+            </div>
+            <div>
+                <p>How was your service?</p>
+                <select name="" id="rating">
+                    <option disabled selected value="0"> -- Rate this Service --</option>
+                    <option value="0.05">5% - Terrible </option>
+                    <option value="0.1"> 10% - Bad</option>
+                    <option value="0.15">15% - Just Okay</option>
+                    <option value="0.2">20% - Good</option>
+                    <option value="0.3">30% - Outstanding</option>
+                </select>
+            </div>
+            <div>
+                <p>How many people are sharing the bill?</p>
+                <input type="text" placeholder="Number of People" name="" id="peopleNumber">
+                <span>people</span>
+            </div>
+            <div class="button-div">
+                <button id="callTip" type="submit"> Calculate</button>
+            </div>
+        </form>
+    </div>
+    <div class="form-container tip-result"></div>
+    <script src="./main.js"></script>
+</body>
+</html>
